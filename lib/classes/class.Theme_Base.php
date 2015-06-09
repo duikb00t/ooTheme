@@ -8,6 +8,7 @@ class Theme_Base {
   }
 
   public function action_wp_enqueue_scripts() {
-
+    wp_localize_script( 'ooTheme_js', 'themes_path', substr( get_template_directory(), strpos( get_template_directory(), 'wp-content/' ) ) );
+    
   }
 }
