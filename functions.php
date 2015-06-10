@@ -2,6 +2,7 @@
 
 /* Includes */
 $roots_includes = array(
+  'lib/init.php',   // Init file menu config etc.
   'lib/wrapper.php' // Theme Wrapper Class
 );
 

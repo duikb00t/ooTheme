@@ -1,5 +1,5 @@
 <?php
-class Theme_Base extends Theme_Base {
+class Theme_Base {
 
   public function __construct() {
     // Register Action Hooks

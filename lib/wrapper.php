@@ -4,9 +4,6 @@ function ooTheme_template_path() {
   return ooTheme_Wrapping::$main_template;
 }
 
-
-echo 'test is SHOWING';
-
 class ooTheme_Wrapping {
 
   // Store the full path to the main template file.
@@ -19,10 +16,9 @@ class ooTheme_Wrapping {
   public $templates;
 
   static $base;
-  echo 'NOT SHOWING'
+
   public function __construct($template = 'base.php') {
 
-    echo 'NOT SHOWING';
     $this->slug = basename($template, '.php');
     $this->templates = array($template);
 
@@ -32,7 +28,13 @@ class ooTheme_Wrapping {
     }
   }
 
+  public function __toString() {
+      $this->templates = apply_filters('roots/wrap_' . $this->slug, $this->templates);
+      return locate_template($this->templates);
+  }
+
   static function wrap($main) {
+
     // Check for other filters returning null
     if (!is_string($main)) {
       return $main;
