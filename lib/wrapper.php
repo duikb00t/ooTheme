@@ -1,10 +1,11 @@
 <?php
 
-function roots_template_path() {
+function ooTheme_template_path() {
   return ooTheme_Wrapping::$main_template;
 }
 
 
+echo 'test is SHOWING';
 
 class ooTheme_Wrapping {
 
@@ -18,9 +19,10 @@ class ooTheme_Wrapping {
   public $templates;
 
   static $base;
-
+  echo 'NOT SHOWING'
   public function __construct($template = 'base.php') {
 
+    echo 'NOT SHOWING';
     $this->slug = basename($template, '.php');
     $this->templates = array($template);
 
