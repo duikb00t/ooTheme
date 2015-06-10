@@ -1,6 +1,5 @@
 <?php
-
-class Theme_Base {
+class Theme_Base extends Theme_Base {
 
   public function __construct() {
     // Register Action Hooks
@@ -9,6 +8,5 @@ class Theme_Base {
 
   public function action_wp_enqueue_scripts() {
     wp_localize_script( 'ooTheme_js', 'themes_path', substr( get_template_directory(), strpos( get_template_directory(), 'wp-content/' ) ) );
-    
   }
 }
