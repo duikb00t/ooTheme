@@ -1,5 +1,12 @@
 body {
-  background-color: lightblue; }
+  background-color: #2A2243; }
+
+.navbar-header {
+  display: none; }
+
+a.color {
+  text-decoration: none;
+  color: #4218C9; }
 
 h1 {
   color: white; }

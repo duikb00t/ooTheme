@@ -1,5 +1,17 @@
+*
 body {
-  background-color: #f5f5f5; }
+  background-color: #2A2243; }
+
+.navbar {
+  background: #34DAAC;
+  border: none; }
+
+.navbar-default .navbar-brand {
+  color: white; }
+
+a {
+  text-decoration: none;
+  color: #486ADC; }
 
 h1 {
   color: white; }

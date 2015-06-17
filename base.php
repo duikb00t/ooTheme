@@ -1,5 +1,4 @@
 <?php
-
 get_template_part('templates/head'); ?>
 
 <body <?php body_class(); ?>>
@@ -10,13 +9,16 @@ get_template_part('templates/head'); ?>
   </div>
 <![endif]-->
 
-<?php
+  <?php
   do_action('get_header');
   get_template_part('templates/header');
-  get_template_part('templates/content');
-?>
+  ?>
 
-<?php get_template_part('templates/footer'); ?>
-<?php wp_footer(); ?>
+  <div class="container"><?php get_template_part('templates/content'); ?></div>
+
+  <?php get_template_part('templates/footer'); ?>
+
+  <?php wp_footer(); ?>
+
 </body>
 </html>

@@ -7,8 +7,6 @@ $roots_includes = array(
   'lib/wrapper.php' // Theme Wrapper Class
 );
 
-
-
 foreach ($roots_includes as $file) {
   if(!$filepath = locate_template($file)) {
     trigger_error(sprintf(__('Error locating %s for inclusion', 'ooTheme'), $file), E_USER_ERROR);
