@@ -3,3 +3,4 @@
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>
 </footer>
+<script src="//localhost:35729/livereload.js"></script>

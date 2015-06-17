@@ -12,6 +12,9 @@ module.exports = function(grunt) {
       },
     },
     watch: {
+      options: {
+        livereload: true,
+      },
       js: {
         files: ['js/**/*.js'],
         tasks: ['concat:js'],
@@ -39,6 +42,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-livereload');
 
   // Merge tasks into 1 default
   grunt.registerTask('default', ['concat', 'watch', 'sass']);

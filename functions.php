@@ -2,7 +2,8 @@
 
 /* Includes */
 $roots_includes = array(
-  'lib/init.php',   // Init file menu config etc.
+  'lib/init.php',   // Init file menu config etc
+  'lib/assets.php',   // Link JS and CSS stylesheets
   'lib/wrapper.php' // Theme Wrapper Class
 );
 
